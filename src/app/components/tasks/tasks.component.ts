@@ -11,6 +11,7 @@ export class TasksComponent implements OnInit {
 
   editForm = false;
   showForm = false;
+  searchText = '';
 
   myTask: Task = {
     label: '',
@@ -18,6 +19,7 @@ export class TasksComponent implements OnInit {
   }
 
   tasks: Task[] = [];
+  resultTasks: Task[] = [];
 
   constructor(private taskService: TaskService) { }
 
@@ -27,7 +29,7 @@ export class TasksComponent implements OnInit {
 
   getTasks(){
     this.taskService.findAll()
-    .subscribe(tasks => this.tasks = tasks )
+    .subscribe(tasks => this.resultTasks = this.tasks = tasks )
   }
 
   deleteTask(id){
@@ -82,6 +84,10 @@ export class TasksComponent implements OnInit {
     this. resetTask();
     this.editForm = false;
 
+  }
+
+  searchTasks(){
+    this.resultTasks = this.tasks.filter((task)=> task.label.toLowerCase().includes(this.searchText.toLowerCase()));
   }
 
 
