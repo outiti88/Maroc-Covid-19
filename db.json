@@ -1,58 +1,180 @@
 {
-    "tasks": [{
-            "Id": 1,
-            "RegionFr": "Drâa-yyy",
-            "Cases": 586,
-            "Deaths": 2,
-            "Recoveries": 17,
-            "date": 5
-
-        },
-        {
-            "Id": 2,
-            "RegionFr": "Eddakhla-Oued Eddahab",
-            "Cases": 5,
-            "Deaths": 0,
-            "Recoveries": 1,
-            "date": 5
-
-        },
-        {
-            "Id": 3,
-            "RegionFr": "Guelmim-Oued Noun",
-            "Cases": 46,
-            "Deaths": 0,
-            "Recoveries": 1,
-            "date": 5
-
-        },
-        {
-            "Id": 1,
-            "RegionFr": "aaaa-yyy",
-            "Cases": 586,
-            "Deaths": 2,
-            "Recoveries": 17,
-            "date": 6
-
-        },
-        {
-            "Id": 2,
-            "RegionFr": "aaa-Oued Eddahab",
-            "Cases": 5,
-            "Deaths": 0,
-            "Recoveries": 1,
-            "date": 6
-
-        },
-        {
-            "Id": 3,
-            "RegionFr": "aa-Oued Noun",
-            "Cases": 46,
-            "Deaths": 0,
-            "Recoveries": 1,
-            "date": 6
-
-        }
-    ]
-
+  "tasks": [
+    {
+      "id": 2,
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "35",
+      "Deaths": 0,
+      "Recoveries": "4",
+      "date": "5"
+    },
+    {
+      "id": 3,
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": 46,
+      "Deaths": 0,
+      "Recoveries": 1,
+      "date": 5
+    },
+    {
+      "id": 4,
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": 5,
+      "Deaths": 0,
+      "Recoveries": 4,
+      "date": 5
+    },
+    {
+      "id": 5,
+      "RegionFr": "Marrakech-Safi",
+      "Cases": 1568,
+      "Deaths": 8,
+      "Recoveries": 4,
+      "date": "6"
+    },
+    {
+      "id": 6,
+      "RegionFr": "Oriental",
+      "Cases": 196,
+      "Deaths": 8,
+      "Recoveries": "16",
+      "date": 5
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": 787,
+      "Deaths": 4,
+      "Recoveries": 7,
+      "date": 5,
+      "id": 7
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": 2883,
+      "Deaths": 8,
+      "Recoveries": 7,
+      "date": 5,
+      "id": 8
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": 1042,
+      "Deaths": 8,
+      "Recoveries": 11,
+      "date": 5,
+      "id": 9
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": 1275,
+      "Deaths": 1,
+      "Recoveries": 1,
+      "date": 5,
+      "id": 10
+    },
+    {
+      "RegionFr": "Beni Mellal-Khénifra",
+      "Cases": 127,
+      "Deaths": 2,
+      "Recoveries": 2,
+      "date": 5,
+      "id": 11
+    },
+    {
+      "RegionFr": "Drâa-Tafilalet",
+      "Cases": 586,
+      "Deaths": 2,
+      "Recoveries": 175,
+      "date": 6,
+      "id": 12
+    },
+    {
+      "id": 13,
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": 5,
+      "Deaths": 0,
+      "Recoveries": 1,
+      "date": 6
+    },
+    {
+      "id": 14,
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": 46,
+      "Deaths": 0,
+      "Recoveries": 1,
+      "date": 6
+    },
+    {
+      "id": 15,
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": 5,
+      "Deaths": 0,
+      "Recoveries": 4,
+      "date": 6
+    },
+    {
+      "id": 16,
+      "RegionFr": "Marrakech-Safi",
+      "Cases": 1568,
+      "Deaths": 8,
+      "Recoveries": 4,
+      "date": 5
+    },
+    {
+      "id": 17,
+      "RegionFr": "Oriental",
+      "Cases": 196,
+      "Deaths": 8,
+      "Recoveries": "20",
+      "date": 6
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": 787,
+      "Deaths": 4,
+      "Recoveries": 7,
+      "date": 6,
+      "id": 18
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": 2883,
+      "Deaths": 8,
+      "Recoveries": 7,
+      "date": 6,
+      "id": 19
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": 1042,
+      "Deaths": 8,
+      "Recoveries": 11,
+      "date": 6,
+      "id": 20
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": 1275,
+      "Deaths": 1,
+      "Recoveries": 1,
+      "date": 6,
+      "id": 21
+    },
+    {
+      "RegionFr": "Beni Mellal-Khénifra",
+      "Cases": 127,
+      "Deaths": 2,
+      "Recoveries": 2,
+      "date": 6,
+      "id": 11
+    },
+    {
+      "RegionFr": "Drâa-Tafilalet",
+      "Cases": 586,
+      "Deaths": 2,
+      "Recoveries": 175,
+      "date": 6,
+      "id": 12
+    }
+  ]
 }
