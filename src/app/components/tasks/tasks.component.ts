@@ -14,12 +14,14 @@ export class TasksComponent implements OnInit {
   searchText = '';
 
   myTask: Task = {
-    label: '',
-    completed: false
+    RegionFr: "string",
+    Cases: 0,
+    Deaths: 0,
+    Recoveries: 0
   }
 
-  tasks: Task[] = [];
-  resultTasks: Task[] = [];
+  tasks: any[] = [];
+  resultTasks: any[] = [];
 
   constructor(private taskService: TaskService) { }
 
@@ -29,7 +31,10 @@ export class TasksComponent implements OnInit {
 
   getTasks(){
     this.taskService.findAll()
-    .subscribe(tasks => this.resultTasks = this.tasks = tasks )
+    .subscribe((tasks) => {
+      this.resultTasks = this.tasks = tasks;
+      console.log(tasks);
+    } )
   }
 
   deleteTask(id){
@@ -51,8 +56,10 @@ export class TasksComponent implements OnInit {
 
   resetTask(){
     this.myTask = {
-      label: '',
-      completed: false 
+      RegionFr: "string",
+    Cases: 0,
+    Deaths: 0,
+    Recoveries: 0
     }
   }
 
@@ -87,7 +94,7 @@ export class TasksComponent implements OnInit {
   }
 
   searchTasks(){
-    this.resultTasks = this.tasks.filter((task)=> task.label.toLowerCase().includes(this.searchText.toLowerCase()));
+    this.resultTasks = this.tasks.filter((task)=> task.RegionFr.toLowerCase().includes(this.searchText.toLowerCase()));
   }
 
 

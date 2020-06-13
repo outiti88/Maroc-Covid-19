@@ -1,24 +1,58 @@
 {
-  "tasks": [
-    {
-      "id": 1,
-      "label": "learn Angular",
-      "completed": false
-    },
-    {
-      "id": 3,
-      "label": "learn Symfony",
-      "completed": true
-    },
-    {
-      "label": "learn java",
-      "completed": false,
-      "id": 5
-    },
-    {
-      "label": "learn pHp",
-      "completed": true,
-      "id": 7
-    }
-  ]
+    "tasks": [{
+            "Id": 1,
+            "RegionFr": "Drâa-yyy",
+            "Cases": 586,
+            "Deaths": 2,
+            "Recoveries": 17,
+            "date": 5
+
+        },
+        {
+            "Id": 2,
+            "RegionFr": "Eddakhla-Oued Eddahab",
+            "Cases": 5,
+            "Deaths": 0,
+            "Recoveries": 1,
+            "date": 5
+
+        },
+        {
+            "Id": 3,
+            "RegionFr": "Guelmim-Oued Noun",
+            "Cases": 46,
+            "Deaths": 0,
+            "Recoveries": 1,
+            "date": 5
+
+        },
+        {
+            "Id": 1,
+            "RegionFr": "aaaa-yyy",
+            "Cases": 586,
+            "Deaths": 2,
+            "Recoveries": 17,
+            "date": 6
+
+        },
+        {
+            "Id": 2,
+            "RegionFr": "aaa-Oued Eddahab",
+            "Cases": 5,
+            "Deaths": 0,
+            "Recoveries": 1,
+            "date": 6
+
+        },
+        {
+            "Id": 3,
+            "RegionFr": "aa-Oued Noun",
+            "Cases": 46,
+            "Deaths": 0,
+            "Recoveries": 1,
+            "date": 6
+
+        }
+    ]
+
 }

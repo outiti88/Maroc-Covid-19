@@ -9,10 +9,10 @@ export class TaskService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl = "http://localhost:5000/tasks";
+  apiUrl = "http://localhost:3000/tasks/";
 
   findAll(){
-    return this.http.get<Task[]>(this.apiUrl);
+    return this.http.get<any[]>(this.apiUrl);
   }
 
   delete(id){

@@ -1,5 +1,7 @@
 export interface Task {
     id?: number;
-    label: string;
-    completed: boolean;
+    RegionFr: string;
+    Cases: number;
+    Deaths: number;
+    Recoveries: number;
 }
