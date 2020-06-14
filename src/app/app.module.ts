@@ -25,6 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     TasksComponent,
+    RegionComponent,
     DashboardComponent
   ],
   imports: [

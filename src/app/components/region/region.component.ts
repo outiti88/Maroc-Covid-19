@@ -62,5 +62,15 @@ export class RegionComponent implements OnInit {
 
    }
 
+   getTotal(){
+    let total = 0;
+    for (let i = 0; i < this.results.length; i++) {
+        total += +this.results[i].Cases;
+        console.log(total);
+      
+    }
+    return total;
+  }
+
   
 }
