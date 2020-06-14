@@ -11,7 +11,6 @@ import {ActivatedRoute } from '@angular/router';
 })
 export class TasksComponent implements OnInit {
 
-  @Input() id: number;
 
 
   editForm = false;
@@ -22,7 +21,6 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService ,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.params['id'];
 
     this.getTasks();
   }

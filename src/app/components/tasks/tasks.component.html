@@ -56,11 +56,11 @@
         <ul class="list-group">
 
             <div *ngFor="let task of affiche()">
-                <li [id]="task.id" class="list-group-item d-flex justify-content-between align-items-center" *ngIf="task.date == searchDate()">
+                <li class="list-group-item d-flex justify-content-between align-items-center" *ngIf="task.date == searchDate()">
                     <button (click)="edit(task)" class="btn btn-warning btn-sm">
                         <i class="fa fa-pencil"></i>
                     </button>
-                    <a [routerLink]="[id]" class="btn btn">{{task.RegionFr}}</a>
+                    <a [routerLink]="[task.id]" class="btn btn">{{task.RegionFr}}</a>
                     <span class="badge badge-pill badge-warning">{{task.Cases}} </span>
                     <span class="badge badge-pill badge-danger">{{task.Deaths}} </span>
                     <span class="badge badge-pill badge-success">{{task.Recoveries}} </span>

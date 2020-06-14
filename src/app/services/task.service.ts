@@ -31,4 +31,10 @@ export class TaskService {
     return this.http.put(`${this.apiUrl}/${task.id}`,task);
   }
 
+  findById(id){
+    return this.http.get(`${this.apiUrl}/${id}`);
+
+  }
+  
+
 }
