@@ -4,5 +4,5 @@ export interface Task {
     Cases: number;
     Deaths: number;
     Recoveries: number;
-    date: number;
+    date: string;
 }

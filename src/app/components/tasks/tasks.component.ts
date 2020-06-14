@@ -2,34 +2,59 @@ import { Component, OnInit,Input } from '@angular/core';
 import { TaskService } from 'src/app/services/task.service';
 import { Task } from 'src/app/models/task';
 import {ActivatedRoute } from '@angular/router';
+import { DatePipe  } from "@angular/common";
+
 
 
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  styleUrls: ['./tasks.component.css'],
+  providers: [DatePipe],
 })
 export class TasksComponent implements OnInit {
-
-
 
   editForm = false;
   showForm = false;
   searchText = '';
-  searchDates = 5;
+  searchDates : any = new Date();
+  regions = [
+     "Eddakhla-Oued Eddahab",
+     "Guelmim-Oued Noun",
+     "Laayoune-Sakia El Hamra",
+     "Marrakech-Safi",
+     "Rabat-Salé-Kénitra",
+     "Casablanca-Settat",
+     "Fés-Meknés",
+     "Tanger-Tétouan-Al Hoceima",
+     "Beni Mellal-Khénifra",
+     "Drâa-Tafilalet",
+     "Oriental",
+     "Souss-Massa"
+     
+  ];
+ selectedValue = null;
 
-  constructor(private taskService: TaskService ,private route: ActivatedRoute) { }
+
+  constructor(private taskService: TaskService ,private route: ActivatedRoute, private datePipe: DatePipe) {
+    this.searchDates = this.datePipe.transform(this.searchDates, 'yyyy-MM-dd');
+
+   }
+
+
 
   ngOnInit(): void {
 
     this.getTasks();
+  
+
   }
   myTask: Task = {
     RegionFr: "Tapez la Région",
     Cases: 0,
     Deaths: 0,
     Recoveries: 0,
-    date: 0
+    date: this.datePipe.transform(new Date(), 'yyyy-MM-dd')
   }
 
   tasks: any[] = [];
@@ -42,7 +67,7 @@ export class TasksComponent implements OnInit {
     this.taskService.findAll()
     .subscribe((tasks) => {
       this.resultTasks = this.tasks = tasks;
-    } )
+    } );
   }
 
   affiche(){
@@ -68,20 +93,15 @@ export class TasksComponent implements OnInit {
 
   resetTask(){
     this.myTask = {
-      RegionFr: "string",
+      RegionFr: "Tapez la Région",
     Cases: 0,
     Deaths: 0,
     Recoveries: 0,
-    date:0
+    date: this.datePipe.transform(new Date(), 'yyyy-MM-dd')
     }
   }
 
-  toggle(task){
-    this.taskService.completed(task.id,task.completed)
-    .subscribe(()=>{
-      task.completed = !task.completed
-    })
-  }
+ 
 
   edit(task){
     this.myTask = task;
@@ -116,8 +136,13 @@ export class TasksComponent implements OnInit {
         this.resultTasks = this.tasks = tasks;
       } )
     }
-   
   }
+
+  /*RegionForDate(){
+    regionsDate : ["salut"];
+      
+    return regionsDate;
+  }*/
 
   getTotal(d : number){
     let total = 0;
@@ -126,9 +151,10 @@ export class TasksComponent implements OnInit {
         total += +this.tasks[i].Cases;
         console.log(total);
       }
-      
+   
     }
-    
+    console.log('saaalut',this.tasks);
+    console.log('caaavaa',this.resultTasks);
     return total;
   }
 

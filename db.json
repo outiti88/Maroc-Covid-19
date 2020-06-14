@@ -3,10 +3,10 @@
     {
       "id": 2,
       "RegionFr": "Eddakhla-Oued Eddahab",
-      "Cases": "35",
+      "Cases": "45",
       "Deaths": 0,
       "Recoveries": "4",
-      "date": "5"
+      "date": "2020-06-17"
     },
     {
       "id": 3,
@@ -14,7 +14,7 @@
       "Cases": 46,
       "Deaths": 0,
       "Recoveries": 1,
-      "date": 5
+      "date": "2020-06-16"
     },
     {
       "id": 4,
@@ -22,7 +22,7 @@
       "Cases": 5,
       "Deaths": 0,
       "Recoveries": 4,
-      "date": 5
+      "date": "2020-06-16"
     },
     {
       "id": 5,
@@ -30,7 +30,7 @@
       "Cases": 1568,
       "Deaths": 8,
       "Recoveries": 4,
-      "date": "6"
+      "date": "2020-06-17"
     },
     {
       "id": 6,
@@ -38,14 +38,14 @@
       "Cases": 196,
       "Deaths": 8,
       "Recoveries": "16",
-      "date": 5
+      "date": "2020-06-16"
     },
     {
       "RegionFr": "Rabat-Salé-Kénitra",
       "Cases": 787,
       "Deaths": 4,
       "Recoveries": 7,
-      "date": 5,
+      "date": "2020-06-16",
       "id": 7
     },
     {
@@ -53,7 +53,7 @@
       "Cases": 2883,
       "Deaths": 8,
       "Recoveries": 7,
-      "date": 5,
+      "date": "2020-06-16",
       "id": 8
     },
     {
@@ -61,7 +61,7 @@
       "Cases": 1042,
       "Deaths": 8,
       "Recoveries": 11,
-      "date": 5,
+      "date": "2020-06-16",
       "id": 9
     },
     {
@@ -69,7 +69,7 @@
       "Cases": 1275,
       "Deaths": 1,
       "Recoveries": 1,
-      "date": 5,
+      "date": "2020-06-16",
       "id": 10
     },
     {
@@ -77,7 +77,7 @@
       "Cases": 127,
       "Deaths": 2,
       "Recoveries": 2,
-      "date": 5,
+      "date": "2020-06-16",
       "id": 11
     },
     {
@@ -85,7 +85,7 @@
       "Cases": 586,
       "Deaths": 2,
       "Recoveries": 175,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 12
     },
     {
@@ -94,7 +94,7 @@
       "Cases": 5,
       "Deaths": 0,
       "Recoveries": 1,
-      "date": 6
+      "date": "2020-06-16"
     },
     {
       "id": 14,
@@ -102,7 +102,7 @@
       "Cases": 46,
       "Deaths": 0,
       "Recoveries": 1,
-      "date": 6
+      "date": "2020-06-17"
     },
     {
       "id": 15,
@@ -110,7 +110,7 @@
       "Cases": 5,
       "Deaths": 0,
       "Recoveries": 4,
-      "date": 6
+      "date": "2020-06-17"
     },
     {
       "id": 16,
@@ -118,7 +118,7 @@
       "Cases": 1568,
       "Deaths": 8,
       "Recoveries": 4,
-      "date": 5
+      "date": "2020-06-16"
     },
     {
       "id": 17,
@@ -126,14 +126,14 @@
       "Cases": 196,
       "Deaths": 8,
       "Recoveries": "20",
-      "date": 6
+      "date": "2020-06-17"
     },
     {
       "RegionFr": "Rabat-Salé-Kénitra",
       "Cases": 787,
       "Deaths": 4,
       "Recoveries": 7,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 18
     },
     {
@@ -141,7 +141,7 @@
       "Cases": 2883,
       "Deaths": 8,
       "Recoveries": 7,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 19
     },
     {
@@ -149,7 +149,7 @@
       "Cases": 1042,
       "Deaths": 8,
       "Recoveries": 11,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 20
     },
     {
@@ -157,7 +157,7 @@
       "Cases": 1275,
       "Deaths": 1,
       "Recoveries": 1,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 21
     },
     {
@@ -165,7 +165,7 @@
       "Cases": 127,
       "Deaths": 2,
       "Recoveries": 2,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 11
     },
     {
@@ -173,8 +173,72 @@
       "Cases": 586,
       "Deaths": 2,
       "Recoveries": 175,
-      "date": 6,
+      "date": "2020-06-17",
       "id": 12
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "20",
+      "Deaths": "2",
+      "Recoveries": "5",
+      "date": "2020-06-14",
+      "id": 22
+    },
+    {
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": "0",
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-14",
+      "id": 23
+    },
+    {
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": 0,
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-14",
+      "id": 24
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": 0,
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-14",
+      "id": 27
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "40",
+      "Deaths": "10",
+      "Recoveries": 0,
+      "date": "2020-06-14",
+      "id": 28
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "5",
+      "Deaths": "2",
+      "Recoveries": "4",
+      "date": "2020-06-14",
+      "id": 29
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "10",
+      "Deaths": "1",
+      "Recoveries": "2",
+      "date": "2020-06-15",
+      "id": 30
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": "10",
+      "Deaths": 0,
+      "Recoveries": "5",
+      "date": "2020-06-15",
+      "id": 31
     }
   ]
 }
