@@ -1,14 +1,27 @@
-<div class="row my-4">
-    <div class="col-md-6">
-        <h3>Covid 19 Maroc : {{getTotal(searchDates)}} cas</h3>
-        <h4>La date: {{searchDates | date: 'yyyy-MM-dd'}}</h4>
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-6">
+            <h3>Covid 19 Maroc : {{getTotal(searchDates)}} cas</h3>
+            <h4>La date: {{searchDates | date: 'yyyy-MM-dd'}}</h4>
+        </div>
+        <div class="col-md-6 text-right">
+            <button (click)="showForme()" class="btn btn-primary">
+                <i class="fa fa-plus"></i> Ajouter une mise à jour
+            </button>
+        </div>
+
     </div>
-    <div class="col-md-6 text-right">
-        <button (click)="showForme()" class="btn btn-primary btn-sm">
-            <i class="fa fa-plus"></i> Ajouter une mise à jour
-        </button>
+    <div *ngIf="created" class="container row my-12">
+        <div class="alert alert-dismissible " [ngClass]="alert" style="width: 100%;">
+            <button (click)="created=!created" type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4 class="alert-heading">Region {{msgAlert}}!</h4>
+            <p class="mb-0">Les statistiques de la nouvelle région ont été bien {{msgAlert}} !! <a routerLink="/" class="alert-link">Retour au Dashboard</a>.</p>
+        </div>
     </div>
+
 </div>
+
+
 
 <div *ngIf="showForm" class="row">
     <div class="col-md-6 mx-auto">
@@ -17,27 +30,33 @@
             <select [(ngModel)]="myTask.RegionFr" class="custom-select" required>
                 <option value="" selected disabled hidden>Choose here</option>
                 <option *ngFor="let r of regions" [value]="r" >
-                    {{ r }}
+                    <span>{{ r }}</span>
                 </option>
             </select>
         </div>
 
-        <div class="form-check my-2">
-            <label class="form-check-label">
-            <input [(ngModel)]="myTask.Cases" placeholder="Cas confirmés"  type="text" class="form-control" >
-            Cas confirmés
-          </label>
-            <label class="form-check-label">
-            <input [(ngModel)]="myTask.Recoveries" placeholder="Guéris"  type="text" class="form-control" >
-            Guéris
-          </label>
-            <label class="form-check-label">
-            <input [(ngModel)]="myTask.Deaths" placeholder="Décés" type="text" class="form-control"> Décés
-            </label>
-            <label class="form-check-label">
+        <div class="form-group">
+            <div class="form-check my-2 d-flex justify-content-between">
 
-            <input [(ngModel)]="myTask.date" placeholder="Date" type="date" class="form-control" required> Date
-            </label>
+                <label class="form-check-label"> Cas confirmés
+                <input [(ngModel)]="myTask.Cases" placeholder="Cas confirmés"  type="text" class="form-control" >
+               
+              </label>
+                <label class="form-check-label">Guéris
+                <input [(ngModel)]="myTask.Recoveries" placeholder="Guéris"  type="text" class="form-control" >
+                
+              </label>
+                <label class="form-check-label">Décés
+                <input [(ngModel)]="myTask.Deaths" placeholder="Décés" type="text" class="form-control"> 
+                </label>
+            </div>
+            <div class="form-check my-2 justify-content d-flex flex-column">
+
+                <label class="form-check-label">
+                    Date
+                <input (keyup)="searchDate()" [(ngModel)]="searchDates" [(ngModel)]="myTask.date" placeholder="Date" type="date" class="form-control" required> 
+                </label>
+            </div>
         </div>
 
         <button *ngIf="editForm" (click)="updateForm()" class="btn btn-warning btn-block">
@@ -45,7 +64,7 @@
         </button>
 
         <button *ngIf="!editForm" (click)="persistTask()" class="btn btn-primary btn-block">
-            <i class="fa fa-send"></i> New Rgion
+            <i class="fa fa-send"></i> New Region
         </button>
 
     </div>

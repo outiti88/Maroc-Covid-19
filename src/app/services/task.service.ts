@@ -7,9 +7,25 @@ import { Task } from '../models/task';
 })
 export class TaskService {
 
+  regions = [
+    "Guelmim-Oued Noun",
+    "Laayoune-Sakia El Hamra",
+    "Marrakech-Safi",
+    "Rabat-Salé-Kénitra",
+    "Casablanca-Settat",
+    "Fés-Meknés",
+    "Tanger-Tétouan-Al Hoceima",
+    "Beni Mellal-Khénifra",
+    "Drâa-Tafilalet",
+    "Oriental",
+    "Eddakhla-Oued Eddahab",
+    "Souss-Massa"
+ ];
+
   constructor(private http: HttpClient) { }
 
   apiUrl = "http://localhost:3000/tasks/";
+  apiUrlRegion ="http://localhost:3000/tasks?RegionFr=";
 
   findAll(){
     return this.http.get<any[]>(this.apiUrl);
@@ -35,6 +51,13 @@ export class TaskService {
     return this.http.get(`${this.apiUrl}/${id}`);
 
   }
+
+  async findRegion(nom){
+    return await this.http.get(`${this.apiUrlRegion}${nom}`).toPromise() ;
+  }
+
+  
+  
   
 
 }

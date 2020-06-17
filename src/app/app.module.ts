@@ -12,6 +12,7 @@ import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 
 import { RegionComponent } from './components/region/region.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ChartsComponent } from './components/charts/charts.component';
 
 const appRoutes: Routes = [
   { path: 'region/:id', component: RegionComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     TasksComponent,
     RegionComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

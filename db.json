@@ -11,23 +11,23 @@
     {
       "id": 3,
       "RegionFr": "Guelmim-Oued Noun",
-      "Cases": 46,
-      "Deaths": 0,
-      "Recoveries": 1,
+      "Cases": 10,
+      "Deaths": 1,
+      "Recoveries": 8,
       "date": "2020-06-16"
     },
     {
       "id": 4,
       "RegionFr": "Laayoune-Sakia El Hamra",
-      "Cases": 5,
-      "Deaths": 0,
-      "Recoveries": 4,
+      "Cases": "15",
+      "Deaths": "1",
+      "Recoveries": "10",
       "date": "2020-06-16"
     },
     {
       "id": 5,
       "RegionFr": "Marrakech-Safi",
-      "Cases": 1568,
+      "Cases": 80,
       "Deaths": 8,
       "Recoveries": 4,
       "date": "2020-06-17"
@@ -35,22 +35,22 @@
     {
       "id": 6,
       "RegionFr": "Oriental",
-      "Cases": 196,
+      "Cases": 19,
       "Deaths": 8,
-      "Recoveries": "16",
+      "Recoveries": "29",
       "date": "2020-06-16"
     },
     {
       "RegionFr": "Rabat-Salé-Kénitra",
-      "Cases": 787,
+      "Cases": "30",
       "Deaths": 4,
-      "Recoveries": 7,
+      "Recoveries": "70",
       "date": "2020-06-16",
       "id": 7
     },
     {
       "RegionFr": "Casablanca-Settat",
-      "Cases": 2883,
+      "Cases": "83",
       "Deaths": 8,
       "Recoveries": 7,
       "date": "2020-06-16",
@@ -58,7 +58,7 @@
     },
     {
       "RegionFr": "Fés-Meknés",
-      "Cases": 1042,
+      "Cases": "80",
       "Deaths": 8,
       "Recoveries": 11,
       "date": "2020-06-16",
@@ -66,15 +66,15 @@
     },
     {
       "RegionFr": "Tanger-Tétouan-Al Hoceima",
-      "Cases": 1275,
-      "Deaths": 1,
-      "Recoveries": 1,
+      "Cases": "25",
+      "Deaths": "5",
+      "Recoveries": "25",
       "date": "2020-06-16",
       "id": 10
     },
     {
       "RegionFr": "Beni Mellal-Khénifra",
-      "Cases": 127,
+      "Cases": 17,
       "Deaths": 2,
       "Recoveries": 2,
       "date": "2020-06-16",
@@ -82,16 +82,16 @@
     },
     {
       "RegionFr": "Drâa-Tafilalet",
-      "Cases": 586,
+      "Cases": 16,
       "Deaths": 2,
-      "Recoveries": 175,
-      "date": "2020-06-17",
+      "Recoveries": 15,
+      "date": "2020-06-14",
       "id": 12
     },
     {
       "id": 13,
       "RegionFr": "Eddakhla-Oued Eddahab",
-      "Cases": 5,
+      "Cases": "8",
       "Deaths": 0,
       "Recoveries": 1,
       "date": "2020-06-16"
@@ -99,7 +99,7 @@
     {
       "id": 14,
       "RegionFr": "Guelmim-Oued Noun",
-      "Cases": 46,
+      "Cases": 4,
       "Deaths": 0,
       "Recoveries": 1,
       "date": "2020-06-17"
@@ -115,22 +115,22 @@
     {
       "id": 16,
       "RegionFr": "Marrakech-Safi",
-      "Cases": 1568,
+      "Cases": "40",
       "Deaths": 8,
-      "Recoveries": 4,
+      "Recoveries": "60",
       "date": "2020-06-16"
     },
     {
       "id": 17,
       "RegionFr": "Oriental",
-      "Cases": 196,
-      "Deaths": 8,
+      "Cases": 6,
+      "Deaths": 2,
       "Recoveries": "20",
       "date": "2020-06-17"
     },
     {
       "RegionFr": "Rabat-Salé-Kénitra",
-      "Cases": 787,
+      "Cases": 25,
       "Deaths": 4,
       "Recoveries": 7,
       "date": "2020-06-17",
@@ -138,7 +138,7 @@
     },
     {
       "RegionFr": "Casablanca-Settat",
-      "Cases": 2883,
+      "Cases": "95",
       "Deaths": 8,
       "Recoveries": 7,
       "date": "2020-06-17",
@@ -146,7 +146,7 @@
     },
     {
       "RegionFr": "Fés-Meknés",
-      "Cases": 1042,
+      "Cases": 42,
       "Deaths": 8,
       "Recoveries": 11,
       "date": "2020-06-17",
@@ -154,47 +154,39 @@
     },
     {
       "RegionFr": "Tanger-Tétouan-Al Hoceima",
-      "Cases": 1275,
-      "Deaths": 1,
-      "Recoveries": 1,
+      "Cases": 15,
+      "Deaths": 5,
+      "Recoveries": 25,
       "date": "2020-06-17",
       "id": 21
     },
     {
       "RegionFr": "Beni Mellal-Khénifra",
-      "Cases": 127,
-      "Deaths": 2,
-      "Recoveries": 2,
+      "Cases": 12,
+      "Deaths": 0,
+      "Recoveries": 20,
       "date": "2020-06-17",
       "id": 11
     },
     {
       "RegionFr": "Drâa-Tafilalet",
-      "Cases": 586,
+      "Cases": 16,
       "Deaths": 2,
-      "Recoveries": 175,
+      "Recoveries": 15,
       "date": "2020-06-17",
       "id": 12
-    },
-    {
-      "RegionFr": "Eddakhla-Oued Eddahab",
-      "Cases": "20",
-      "Deaths": "2",
-      "Recoveries": "5",
-      "date": "2020-06-14",
-      "id": 22
     },
     {
       "RegionFr": "Guelmim-Oued Noun",
       "Cases": "0",
       "Deaths": 0,
-      "Recoveries": 0,
+      "Recoveries": 4,
       "date": "2020-06-14",
       "id": 23
     },
     {
       "RegionFr": "Laayoune-Sakia El Hamra",
-      "Cases": 0,
+      "Cases": 10,
       "Deaths": 0,
       "Recoveries": 0,
       "date": "2020-06-14",
@@ -202,9 +194,9 @@
     },
     {
       "RegionFr": "Casablanca-Settat",
-      "Cases": 0,
-      "Deaths": 0,
-      "Recoveries": 0,
+      "Cases": "60",
+      "Deaths": "10",
+      "Recoveries": "80",
       "date": "2020-06-14",
       "id": 27
     },
@@ -212,7 +204,7 @@
       "RegionFr": "Fés-Meknés",
       "Cases": "40",
       "Deaths": "10",
-      "Recoveries": 0,
+      "Recoveries": 50,
       "date": "2020-06-14",
       "id": 28
     },
@@ -239,6 +231,198 @@
       "Recoveries": "5",
       "date": "2020-06-15",
       "id": 31
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "40",
+      "Deaths": 10,
+      "Recoveries": 30,
+      "date": "2020-06-15",
+      "id": 32
+    },
+    {
+      "RegionFr": "Souss-Massa",
+      "Cases": "10",
+      "Deaths": 0,
+      "Recoveries": "5",
+      "date": "2020-06-16",
+      "id": 33
+    },
+    {
+      "RegionFr": "Souss-Massa",
+      "Cases": "5",
+      "Deaths": "3",
+      "Recoveries": "4",
+      "date": "2020-06-17",
+      "id": 34
+    },
+    {
+      "RegionFr": "Oriental",
+      "Cases": "30",
+      "Deaths": "9",
+      "Recoveries": "50",
+      "date": "2020-06-14",
+      "id": 35
+    },
+    {
+      "id": 37,
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": 6,
+      "Deaths": 0,
+      "Recoveries": 4,
+      "date": "2020-06-13"
+    },
+    {
+      "id": 38,
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": "15",
+      "Deaths": "2",
+      "Recoveries": "5",
+      "date": "2020-06-13"
+    },
+    {
+      "id": 39,
+      "RegionFr": "Marrakech-Safi",
+      "Cases": 50,
+      "Deaths": 8,
+      "Recoveries": 4,
+      "date": "2020-06-13"
+    },
+    {
+      "id": 40,
+      "RegionFr": "Oriental",
+      "Cases": 16,
+      "Deaths": 2,
+      "Recoveries": "13",
+      "date": "2020-06-13"
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": "60",
+      "Deaths": 4,
+      "Recoveries": "70",
+      "date": "2020-06-13",
+      "id": 41
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": "75",
+      "Deaths": 18,
+      "Recoveries": 27,
+      "date": "2020-06-13",
+      "id": 42
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "80",
+      "Deaths": 8,
+      "Recoveries": 11,
+      "date": "2020-06-13",
+      "id": 43
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": "20",
+      "Deaths": "3",
+      "Recoveries": "10",
+      "date": "2020-06-13",
+      "id": 44
+    },
+    {
+      "RegionFr": "Beni Mellal-Khénifra",
+      "Cases": 15,
+      "Deaths": 2,
+      "Recoveries": 10,
+      "date": "2020-06-13",
+      "id": 11
+    },
+    {
+      "RegionFr": "Drâa-Tafilalet",
+      "Cases": 6,
+      "Deaths": 2,
+      "Recoveries": 7,
+      "date": "2020-06-13",
+      "id": 45
+    },
+    {
+      "id": 46,
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "15",
+      "Deaths": 0,
+      "Recoveries": 1,
+      "date": "2020-06-13"
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "2",
+      "Deaths": "3",
+      "Recoveries": 0,
+      "date": "2020-06-18",
+      "id": 47
+    },
+    {
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": "1",
+      "Deaths": 0,
+      "Recoveries": "3",
+      "date": "2020-06-18",
+      "id": 48
+    },
+    {
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": "4",
+      "Deaths": 0,
+      "Recoveries": "8",
+      "date": "2020-06-18",
+      "id": 49
+    },
+    {
+      "RegionFr": "Marrakech-Safi",
+      "Cases": "10",
+      "Deaths": "1",
+      "Recoveries": "12",
+      "date": "2020-06-18",
+      "id": 50
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": "20",
+      "Deaths": "4",
+      "Recoveries": "18",
+      "date": "2020-06-18",
+      "id": 51
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": "45",
+      "Deaths": "5",
+      "Recoveries": "35",
+      "date": "2020-06-18",
+      "id": 52
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "40",
+      "Deaths": "2",
+      "Recoveries": "25",
+      "date": "2020-06-18",
+      "id": 53
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": "25",
+      "Deaths": "2",
+      "Recoveries": "20",
+      "date": "2020-06-18",
+      "id": 54
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": "20",
+      "Deaths": "4",
+      "Recoveries": "25",
+      "date": "2020-06-14",
+      "id": 55
     }
   ]
 }

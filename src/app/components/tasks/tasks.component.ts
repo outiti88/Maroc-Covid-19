@@ -14,6 +14,9 @@ import { DatePipe  } from "@angular/common";
 })
 export class TasksComponent implements OnInit {
 
+  msgAlert = "";
+  alert="";
+  created = false;
   editForm = false;
   showForm = false;
   searchText = '';
@@ -54,7 +57,7 @@ export class TasksComponent implements OnInit {
     Cases: 0,
     Deaths: 0,
     Recoveries: 0,
-    date: this.datePipe.transform(new Date(), 'yyyy-MM-dd')
+    date: this.searchDates
   }
 
   tasks: any[] = [];
@@ -77,7 +80,11 @@ export class TasksComponent implements OnInit {
   deleteTask(id){
     this.taskService.delete(id)
     .subscribe(() => {
-      this.tasks = this.tasks.filter(task => task.id != id)
+      this.tasks = this.tasks.filter(task => task.id != id);
+      this.created = true;
+      this.alert="alert-danger";
+      this.msgAlert="supprimées  "
+
     })
   }
 
@@ -87,7 +94,9 @@ export class TasksComponent implements OnInit {
       this.tasks = [task, ...this.tasks];
       this.resetTask();
       this.showForm = false;
-
+      this.created = true;
+      this.alert="alert-success";
+      this.msgAlert="ajoutées "
     })
   }
 
@@ -116,6 +125,9 @@ export class TasksComponent implements OnInit {
       this.resetTask();
       this.editForm = false;
       this.showForm = false;
+      this.created = true;
+      this.alert="alert-warning";
+      this.msgAlert="modifiées "
     })
   }
 
@@ -153,8 +165,6 @@ export class TasksComponent implements OnInit {
       }
    
     }
-    console.log('saaalut',this.tasks);
-    console.log('caaavaa',this.resultTasks);
     return total;
   }
 

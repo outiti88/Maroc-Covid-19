@@ -50,7 +50,7 @@ export class RegionComponent implements OnInit {
     .subscribe((task) => {
       this.myTask = task;
       this.results  = this.resultTasks.filter((task)=> task.RegionFr.includes(this.myTask.RegionFr));
-      console.log(this.results);
+      console.log("sssss: ",this.results);
 
 
     } );
