@@ -36,40 +36,57 @@
 
 
         <div style="padding-top:40px" class=" bg-secondary text-center col-md-8">
-            <h1>Le Maroc Par region : </h1>
-            <app-charts my-id="chart3" type="bar"></app-charts>
-        </div>
+            <button *ngIf="chart != 1" (click)="change()" style="margin-bottom:20px;margin-right:20px;" class="btn btn-primary">Dashboard</button>
+            <button *ngIf="chart != 3" (click)="changeToTwo()" style="margin-bottom:20px;margin-right:20px;" class="btn btn-primary">Comparer deux region</button>
+            <button *ngIf="chart != 2" (click)="changeToAll()" style="margin-bottom:20px" class="btn btn-primary">Comparer tous</button>
 
+            <div *ngIf="chart == 1">
+                <h1>Le Maroc Par region : </h1>
 
-    </div>
-
-    <div class="row my-4">
-        <div style="padding-top:40px" class=" bg-secondary text-center col-md-12">
-            <h1>Le Maroc Par region : </h1>
-            <app-charts my-id="chart4" type="line"></app-charts>
-        </div>
-    </div>
-    <div class="row my-4">
-        <div style="padding-top:40px" class="flex bg-secondary text-center col-md-12">
-            <h1>Comparer Entre deux Région : </h1>
-            <div class="d-flex justify-content-between">
-                <div class="form-group col-md-5">
-                    <select [(ngModel)]="region1" class="custom-select" required>
-                        <option *ngFor="let r of regions"  >
-                            <span>{{ r }}</span>
-                        </option>
-                    </select>
-                </div>
-                <div class="form-group col-md-5">
-                    <select [(ngModel)]="region2" class="custom-select" required>
-                        <option *ngFor="let r of regions"  >
-                            <span>{{ r }}</span>
-                        </option>
-                    </select>
-
-                </div>
+                <app-charts my-id="chart3" type="bar"></app-charts>
             </div>
-            <app-charts my-id="chart2" [regionUne]="region1" [regionDeux]="region2" type="pie"></app-charts>
+
+
+            <div *ngIf="chart == 2" style="padding-top:40px" class=" bg-secondary text-center col-md-12">
+                <h1>Le Maroc Par region : </h1>
+                <div class="d-flex justify-content-between">
+
+                    <div class="form-group col-md-12">
+                        <select [(ngModel)]="choice" class="custom-select" required>
+                            <option *ngFor="let r of choices"  >
+                                <span>{{ r }}</span>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <app-charts my-id="chart4" [choice]="choice" type="line"></app-charts>
+            </div>
+
+            <div *ngIf="chart == 3" style="padding-top:40px" class="flex bg-secondary text-center col-md-12">
+                <h1>Comparer Entre deux Région : </h1>
+                <div class="d-flex justify-content-between">
+                    <div class="form-group col-md-5">
+                        <select [(ngModel)]="region1" class="custom-select" required>
+                            <option *ngFor="let r of regions"  >
+                                <span>{{ r }}</span>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <select [(ngModel)]="region2" class="custom-select" required>
+                            <option *ngFor="let r of regions"  >
+                                <span>{{ r }}</span>
+                            </option>
+                        </select>
+
+                    </div>
+                </div>
+                <app-charts my-id="chart2" [regionUne]="region1" [regionDeux]="region2" type="pie"></app-charts>
+            </div>
+
         </div>
+
+
     </div>
+
 </div>

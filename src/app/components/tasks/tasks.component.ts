@@ -77,7 +77,9 @@ export class TasksComponent implements OnInit {
     return this.tasks;
   }
 
-  deleteTask(id){
+  deleteTask(id , nom){
+    if(confirm("Voulez vous vraiment supprimer la region de: "+nom)){
+
     this.taskService.delete(id)
     .subscribe(() => {
       this.tasks = this.tasks.filter(task => task.id != id);
@@ -86,6 +88,9 @@ export class TasksComponent implements OnInit {
       this.msgAlert="supprimées  "
 
     })
+
+    }
+   
   }
 
   persistTask(){

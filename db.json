@@ -423,6 +423,110 @@
       "Recoveries": "25",
       "date": "2020-06-14",
       "id": 55
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "2",
+      "Deaths": 0,
+      "Recoveries": "5",
+      "date": "2020-06-19",
+      "id": 56
+    },
+    {
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": "5",
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-19",
+      "id": 57
+    },
+    {
+      "RegionFr": "Casablanca-Settat",
+      "Cases": "20",
+      "Deaths": "2",
+      "Recoveries": "30",
+      "date": "2020-06-19",
+      "id": 58
+    },
+    {
+      "RegionFr": "Marrakech-Safi",
+      "Cases": "10",
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-19",
+      "id": 59
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "23",
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-19",
+      "id": 60
+    },
+    {
+      "RegionFr": "Eddakhla-Oued Eddahab",
+      "Cases": "5",
+      "Deaths": "5",
+      "Recoveries": "10",
+      "date": "2020-06-20",
+      "id": 61
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": "20",
+      "Deaths": 0,
+      "Recoveries": "5",
+      "date": "2020-06-19",
+      "id": 62
+    },
+    {
+      "RegionFr": "Fés-Meknés",
+      "Cases": "20",
+      "Deaths": "8",
+      "Recoveries": "50",
+      "date": "2020-06-20",
+      "id": 63
+    },
+    {
+      "RegionFr": "Marrakech-Safi",
+      "Cases": "35",
+      "Deaths": "8",
+      "Recoveries": "40",
+      "date": "2020-06-20",
+      "id": 64
+    },
+    {
+      "RegionFr": "Guelmim-Oued Noun",
+      "Cases": 0,
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-20",
+      "id": 65
+    },
+    {
+      "RegionFr": "Laayoune-Sakia El Hamra",
+      "Cases": 0,
+      "Deaths": 0,
+      "Recoveries": 0,
+      "date": "2020-06-20",
+      "id": 66
+    },
+    {
+      "RegionFr": "Rabat-Salé-Kénitra",
+      "Cases": "80",
+      "Deaths": "5",
+      "Recoveries": "50",
+      "date": "2020-06-20",
+      "id": 67
+    },
+    {
+      "RegionFr": "Tanger-Tétouan-Al Hoceima",
+      "Cases": "20",
+      "Deaths": "6",
+      "Recoveries": "30",
+      "date": "2020-06-20",
+      "id": 68
     }
   ]
 }

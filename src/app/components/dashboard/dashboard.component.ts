@@ -12,8 +12,13 @@ export class DashboardComponent implements OnInit, OnChanges, AfterViewInit {
   @ViewChild(ChartsComponent) charts ;
   constructor(private taskService: TaskService ) { }
 
+  chart : number = 1;
+
   region1 : string = 'Casablanca-Settat' ;
   region2 : string = 'Tanger-Tétouan-Al Hoceima';
+
+  choices : string[] = ["line" , "pie"];
+choice : string = "line";
 
   regions : any ; 
   maroc = {
@@ -35,6 +40,20 @@ export class DashboardComponent implements OnInit, OnChanges, AfterViewInit {
       this.maroc = this.charts.maroc;
       this.regions= this.charts.regions;
   }
+
+  changeToTwo(){
+    this.chart = 3 ;
+  }
+
+  changeToAll(){
+    this.chart = 2 ;
+  }
+
+  change(){
+    this.chart = 1 ;
+  }
+
+
 
 
  

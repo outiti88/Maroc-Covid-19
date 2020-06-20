@@ -17,6 +17,9 @@ export class ChartsComponent implements OnInit, OnChanges {
   @Input('type') type = '';
   @Input('regionUne') regionUne = '' ;
   @Input('regionDeux') regionDeux = '';
+  @Input('choice') choice = 'line';
+
+  
   //@Input('data') data ;
 
 
@@ -71,7 +74,7 @@ export class ChartsComponent implements OnInit, OnChanges {
 
 
     var myChart = new Chart(this.myId, {
-      type: this.type,
+      type: this.myId === 'chart4' ? this.choice :this.type,
       data: {
           labels: this.type !=='pie' ?regions : [this.regionDeux , this.regionUne],
           datasets: [{
@@ -224,6 +227,7 @@ export class ChartsComponent implements OnInit, OnChanges {
   }
 
   async getMarocStat(){
+    
     let resultat = [];
   
     for (let j = 0; j < this.regions.length; j++) {
@@ -248,9 +252,9 @@ export class ChartsComponent implements OnInit, OnChanges {
       temp.RegionFr = this.region[0].RegionFr;
 
 
-      this.maroc.Cases += +c;
-      this.maroc.Deaths += +d;
-      this.maroc.Recoveries += +r;
+      this.maroc.Cases += +c/2;
+      this.maroc.Deaths += +d/2;
+      this.maroc.Recoveries += +r/2;
       console.log("maroc: ", this.maroc);
 
 
